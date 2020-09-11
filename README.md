@@ -26,4 +26,5 @@
 - Kiírni, hogy "van" vagy "nincs"
 
 ## Kiválasztás
-- 
+- Kivalasztas() metódus hányadik az 50-es;
+- Kiírni a helyét a tömbben

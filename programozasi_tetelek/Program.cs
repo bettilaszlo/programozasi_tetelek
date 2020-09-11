@@ -60,12 +60,22 @@ namespace programozasi_tetelek
                     Console.WriteLine("Nincs a tömbben 69!");
                 }
         }
+        private static void Kivalasztas()
+        {
+            int ki = 0;
+            while (tomb[ki] != 50)
+            {
+                ki++;
+            }
+            Console.WriteLine("A tömb {0}. indexű helyén van az 50",ki);
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
             Megszamolas();
             Eldontes();
+            Kivalasztas();
             Console.ReadKey();
         }
 
