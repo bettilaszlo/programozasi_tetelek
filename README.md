@@ -26,5 +26,10 @@
 - Kiírni, hogy "van" vagy "nincs"
 
 ## Kiválasztás
-- Kivalasztas() metódus hányadik az 50-es;
+- Kivalasztas() metódus létrehozása
+- hányadik az 50-es?
 - Kiírni a helyét a tömbben
+
+## Keresés (lineáris)
+- Kereses() metódus létrehozása
+- van-e benne 50 és ha van hányadik?
