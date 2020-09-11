@@ -19,15 +19,17 @@ namespace programozasi_tetelek
         }
         private static void Osszegzes()
         {
+            Console.WriteLine("\n Összegzés tétele");
             int osszeg = 0;
             for (int i = 0; i < tomb.Length; i++)
             {
                 osszeg += tomb[i];
             }
-            Console.WriteLine("\n Összesen: {0}", osszeg);
+            Console.WriteLine(" {0}", osszeg);
         }
         private static void Megszamolas()
         {
+            Console.WriteLine("Megszámlálás tétele");
             int x = 0;
             for (int i = 0; i < tomb.Length; i++)
             {
@@ -39,14 +41,34 @@ namespace programozasi_tetelek
             }
             Console.WriteLine("{0} db 3-mal osztható szám van", x);
         }
+        private static void Eldontes()
+        {
+            Console.WriteLine("Eldöntés tétele");
+
+            int i = 0;
+
+            while (i < tomb.Length && tomb[i] != 69)
+            {
+                i++;
+            }
+                if (i < tomb.Length)
+                {
+                    Console.WriteLine("Van a tömbben 69!");
+                }
+                else
+                {
+                    Console.WriteLine("Nincs a tömbben 69!");
+                }
+        }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
             Megszamolas();
+            Eldontes();
             Console.ReadKey();
         }
 
-       
+        
     }
 }
