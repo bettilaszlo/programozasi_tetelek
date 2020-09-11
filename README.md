@@ -10,7 +10,12 @@
     - nincs paramétere 
     - A tömb elemeit vesszõvel elválasztva egy sorban a consol-ba írja
 
-##Összegzés
+## Összegzés
 - Osszegzes() metódus létrehozása
 - összegzés tétele a tömbön
+- eredmény kiírása a console-ra
+
+## Megszámolás
+- Megszamolas() metódus létrehozása
+- Hány db 3-mal osztható elem van a tömbben?
 - eredmény kiírása a console-ra

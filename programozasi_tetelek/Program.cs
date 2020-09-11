@@ -24,15 +24,29 @@ namespace programozasi_tetelek
             {
                 osszeg += tomb[i];
             }
-            Console.WriteLine("\n {0}", osszeg);
+            Console.WriteLine("\n Összesen: {0}", osszeg);
+        }
+        private static void Megszamolas()
+        {
+            int x = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[i] % 3 == 0)
+                {
+                    x++;
+                }
+                
+            }
+            Console.WriteLine("{0} db 3-mal osztható szám van", x);
         }
         static void Main(string[] args)
         {
             TombKiiras();
             Osszegzes();
+            Megszamolas();
             Console.ReadKey();
         }
 
-        
+       
     }
 }
