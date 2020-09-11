@@ -78,12 +78,25 @@ namespace programozasi_tetelek
             }
             if (ker < tomb.Length)
             {
-                Console.WriteLine("Benne van az 50 a {0}. helyen /{1}. indexű helyen", ker,ker+1);
+                Console.WriteLine("Benne van az 50 a {0}. helyen és a {1}. indexű helyen", ker,ker+1);
             }
             else
             {
                 Console.WriteLine("Nincs benne 50");
             }
+        }
+        private static void Maximum()
+        {
+            int max = 0;
+            for (int i = 0; i < tomb.Length; i++)
+            {
+                if (tomb[max] < tomb[i])
+                {
+                    max = i;
+                }
+            }
+            Console.WriteLine("Maximum szám: {0} ami a {1}, indexű helyen van", tomb[max], max);
+
         }
 
         static void Main(string[] args)
@@ -94,9 +107,10 @@ namespace programozasi_tetelek
             Eldontes();
             Kivalasztas();
             Kereses();
+            Maximum();
             Console.ReadKey();
         }
 
-       
+        
     }
 }
